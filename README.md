@@ -1,2 +1,2 @@
 # AES-Implimentation-in-python-using-pycrypto
-Lets see if we can perform AES encryption using pycrypto
+This is code for AES Encryption in python using pycrypto 
