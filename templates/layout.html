@@ -1,0 +1,57 @@
+<!--layout for all pages-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Virtual Labs - A MHRD Govt of india Initiative">
+    <meta name="author" content="Virtual Labs - A MHRD Govt of india Initiative">
+    <!--meta ends-->
+
+    <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
+    
+    <!--tab icon and css-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top" class="index">
+    
+    <div id="top">
+      
+      <header>
+        <!--Virtual labs universal navigation Bar-->
+        {% include 'includes/_navbar.html' %}
+      </header>
+      
+      <div id="content">
+        <!--AES side bar-->
+        {% include 'includes/_sidebar.html' %}
+        <!--Page specific content starts-->
+        {% block page_content %} 
+        <!--Content Space-->
+        {% endblock %}
+        <!--Page specific Content Ends-->
+      </div>
+      <!--Virtual labs universal footer-->
+      {% include 'includes/_footer.html' %}
+    </div> 
+
+  </body>
+  
+  <!-- jQuery -->
+  <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+	<!-- Custom Theme JavaScript -->
+  <script src="{{ url_for('static', filename='custom.js') }}"></script>
+
+</html>
+<!--Layout ENDS-->
