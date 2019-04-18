@@ -1,0 +1,56 @@
+<!--Imports layout template-->
+{% extends "layout.html" %}
+{% block page_content %}
+<!--page specific things-->
+<div class="col-md-10 lab-list-col-10">
+	<h1 class="text-h2-lightblue">
+		Theory
+	</h1>
+	
+	<div>
+		<!--links to materials for theory-->
+		For a very brief theory of "Advanced Encryption Standard" and their analysis, click <a href="http://cse29-iiith.vlabs.ac.in/exp8/media/16_AES.pdf" target="blank"><u>here</u></a>.
+		<br>
+		For a very brief theory of "Modes of Encryption" and their analysis, click <a href="http://cse29-iiith.vlabs.ac.in/exp8/media/Modes%20of%20operation.pdf" target="blank"><u></a>here</u></a>.
+		<br>
+
+		<!--images describing part of process of encryption-->
+
+		<p>
+			<img  id="ecbm_image" src="../static/ecbm.png" alt="here"/>
+			<br>
+			<b>
+				Electronic Code Book(ECB) mode
+			</b>
+		</p>
+		<p>
+			<img id="cdbm_image" src="../static/cdbm.png" alt="here"/>
+			<br>
+			<b>
+				Cipher Block Chaining(CBC) mode
+			</b>
+		</p>
+		<p>
+			<img id="ctr_image" src="../static/ctr.png" alt="here"/>
+			<br>
+			<b>
+				Contur mode
+			</b> 			
+		</p>
+		<p>
+			<img id="ofbm_imgae" src="../static/ofbm.png" alt="here"/>
+			<br>
+			<b>
+				Output FeedBack mode
+			</b>
+		</p>
+
+	</div>
+</div>
+
+<!--tag ends for footer part-->
+</div>
+</div>
+</div>								
+
+{% endblock %}

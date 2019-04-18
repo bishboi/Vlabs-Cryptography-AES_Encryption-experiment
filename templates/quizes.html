@@ -1,0 +1,105 @@
+<!--Imports layout template-->
+{% extends "layout.html" %}
+{% block page_content %}
+
+<!--Page specific contents-->
+<div class="col-md-10 lab-list-col-10">
+	<h1 class="text-h2-lightblue">
+		Quizes
+	</h1>
+	<div>
+		<div style="font-size: 19px;">
+		<!--quiz input form starts-->
+			<form action="/quizes", method="POST">
+				<!--Multiple choice questions starts-->
+				<b>1.</b> ECB stands for:
+				<br> 
+				 <input type="radio" name="a1" value="A" > 
+					Electronic Cipher Block
+					<br>
+				<input type="radio" name="a1" value="B" > 
+					Electronic Code Block
+					<br>
+				<input type="radio" name="a1" value="C" >
+					Electronic Code Book
+					<br>
+				<input type="radio" name="a1" value="D" > 
+					Electronic Cipher Book
+					<br>
+			
+				<b>2.</b> Which among the following is not CPA secure: 
+				<br>
+				 <input type="radio" name="a2" value="A" > 
+					 ECB
+					<br>
+				<input type="radio" name="a2" value="B" > 
+					CBC
+					<br>
+				<input type="radio" name="a2" value="C" > 
+					CFB
+					<br>
+				<input type="radio" name="a2" value="D" > 
+					None
+					<br>
+
+				<b>3.</b> Which of the following are block ciphers: 
+				<br>
+				 <input type="radio" name="a3" value="A" > 
+					ECB
+					<br>
+				<input type="radio" name="a3" value="B" > 
+					CBC
+					<br>
+				<input type="radio" name="a3" value="C" > 
+					CFB
+					<br>
+				<input type="radio" name="a3" value="D" > 
+					All
+					<br>
+				<!--Multiple choice questions ends-->
+				
+				<!--Subjective questions starts-->
+				<b>4.</b> Which is the fastest mode of operation among four mode of operation?
+				<br>
+				Answer:
+				<input name="a4" style="width:700px;height:40px;border:1px solid #000;">
+				<br>
+
+				<b>5.</b> Which mode of operation is more secure?
+				<br>
+				Answer:
+				<input name="a5" style="width:700px;height:40px;border:1px solid #000;">
+				<br>
+
+				<b>6.</b> What is importance of Intialiczation Vector(IV) and CTR ?
+				<br>
+				Answer:
+				<input name="a6" style="width:700px;height:40px;border:1px solid #000;">
+				<br>
+				
+				<b>7.</b> Why ECB is not CPA-secure and Why CBC is CPA-secure?
+				<br>
+				Answer:
+				<input name="a7" style="width:700px;height:40px;border:1px solid #000;">
+				<br>
+
+				<b>8.</b> Suppose IV is not random.Then is CBC and OFB mode both secure?
+				<br>
+				Answer:
+				<input name="a8" style="width:700px;height:40px;border:1px solid #000;">
+				<br>
+				<!--subjective choice questions ends-->
+				<br>
+				<input type = "submit", value = "submit">
+			</form>
+		<!--quiz input form ends-->
+		</div>	
+	</div>						
+</div>
+
+<!--tag ends for footer part-->
+</div>
+</div>
+</div>								
+
+{% endblock %}

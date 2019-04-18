@@ -1,0 +1,6 @@
+1) Convert all php elements to html,javascript,etc
+2) Create database to store all data
+3) Make python scripts to facilitate running of the site
+4) Make use of SQLAlchemy,Flask and stuff for database management
+5) Use POST GET method to get input from form,dropdowns,etc
+6) Make test cases for experiment
